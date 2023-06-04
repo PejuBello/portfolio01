@@ -1,0 +1,32 @@
+<%- include('partials/header'); %>
+
+
+  <section class="homepage" id="home">
+    <div class="content">
+      <div class="text">
+        <h1>Welcome to Olamipeju Bello's Page</h1>
+        <p>
+          A seasoned Project Coordinator with over seven years of experience in project management and product design. <br> My mission is to see the upscale of project success especially in the IT space.</p>
+      </div>
+      <a href="/Content/Resume_Peju.pdf">MY RESUME</a>
+    </div>
+  </section>
+
+  <% if (title == "About"){ %>
+    <%- include about.ejs %>
+  <% } %>
+
+  <% if (title == "Projects"){ %>
+    <%- include projects.ejs %>
+  <% } %>
+
+  <% if (title == "Services"){ %>
+    <%- include services.ejs %>
+  <% } %>
+
+  <% if (title == "Contact Me"){ %>
+    <%- include contact.ejs %>
+  <% } %>
+
+
+<%- include('partials/footer'); %>
